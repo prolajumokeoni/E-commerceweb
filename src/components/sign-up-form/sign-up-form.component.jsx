@@ -15,7 +15,7 @@ const defaultFormFields = {
   confirmPassword: "",
 };
 
-const SignUpForm = () => {
+const SignUPForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
@@ -55,7 +55,8 @@ const resetFormFields = () => {
 
   return (
     <div className="sign-up-container">
-      <h1>Sign Up with your email and password</h1>
+    <span>Dont  have an account?</span>
+      <h1>Create an account</h1>
 
       <form onSubmit={handleSubmit}> 
         <FormInput
@@ -96,4 +97,4 @@ const resetFormFields = () => {
   );
 };
 
-export default SignUpForm;
+export default SignUPForm;
